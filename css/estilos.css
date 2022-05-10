@@ -4,9 +4,11 @@
 }
 
 body{
-    background-color: #1D232A;
+    background-color: #2b0d5c;
+    /* background-color: #1D232A; */
     font-family: 'open sans', 'icones', sans-serif;
     color: #FFFFFF;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 1440px){
@@ -229,7 +231,8 @@ body{
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
-    background-color: #2C343A;
+    background-color: #180832;
+    /* background-color: #2C343A; */
 }
 
 
@@ -270,7 +273,8 @@ body{
 }
 
 .cartao-info{
-    color: #95999c;
+    color: #fff;
+    /* color: #95999c; */
     font-size: 14px;
     grid-column: span 2;
 }
