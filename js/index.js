@@ -17,7 +17,6 @@ function paginaAnimal(){
 let visualizacoes = 0;
 
 function addVisual(){
-    
     visualizacoes++;
     numeroVisu.innerText = `${visualizacoes} Visualizações`;
 }
