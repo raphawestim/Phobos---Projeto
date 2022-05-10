@@ -33,3 +33,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
     });
   });
+
+  function saveCache(){
+      
+  }
+
