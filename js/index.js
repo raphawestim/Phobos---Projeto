@@ -10,15 +10,28 @@ botaoMenu.addEventListener("click",() => {
 function paginaAnimal(){
     window.location = "../data/CatalogoAnimal.html"
  }
-
+ 
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 
-let visualizacoes = 0;
+// Local Storage --------------------------------------------------------------------//
+ function getLocalStorage(){
+     let visualizacoes;
+    const visuStorage = JSON.parse(localStorage.getItem('visualizacoes') )|| {};
+    visualizacoes = visuStorage.visu;
+    numeroVisu.innerText = `${visuStorage.visu} Visualizações`;
+    return {visualizacoes, visuStorage};
+ }
 
-function addVisual(){
+ getLocalStorage();
+
+ // evento de salvar Visualizações------------------------------------------//
+ function addVisual(){
+    let {visualizacoes, visuStorage} = getLocalStorage();
     visualizacoes++;
-    numeroVisu.innerText = `${visualizacoes} Visualizações`;
+    visuStorage["visu"] = visualizacoes;
+    localStorage.setItem("visualizacoes", JSON.stringify(visuStorage));
+    numeroVisu.innerText = `${visuStorage.visu} Visualizações`;
 }
 
 console.log(numeroVisu);
@@ -39,10 +52,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function saveCache(){
 
   }
-
-  // Store
-localStorage.setItem("lastname", "Smith");
-// Retrieve
-document.getElementById("result").innerHTML = 
-localStorage.getItem("lastname");
 
