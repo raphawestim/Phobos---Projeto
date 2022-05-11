@@ -11,6 +11,14 @@ function paginaAnimal(){
     window.location = "../data/CatalogoAnimal.html"
  }
 
+ function paginaVideo(){
+    window.location = "../data/video1.html"
+ }
+
+ function paginaVideo2(){
+    window.location = "../data/video2.html"
+ }
+
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 
