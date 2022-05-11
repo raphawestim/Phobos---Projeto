@@ -6,7 +6,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-            <title>HZC PICOS</title>
+            <title>Phobos - Relatos</title>
             <link rel="stylesheet" href="../css/reset.css">
             <link rel="stylesheet" href="../css/estilos.css">
             <link rel="stylesheet" href="../css/modal-video.min.css">
@@ -20,7 +20,7 @@
             <!-- <button class="cabecalho__notficacao" aria-label="Notificacao"><i></i></button> -->
         </header>
         <nav class="menu-lateral menu-lateral--ativo">
-            <img src="../assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+            <img src="../assets/img/logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
             <a href="../index.html" class="menu-lateral__link inicio">Inicio</a>
             <a href="#" class="menu-lateral__link video ">Mais Procurados</a>
             <a href="../data/tipos.html" class="menu-lateral__link pico ">Tipos</a>
@@ -38,8 +38,8 @@
                     <h3 class="cartao-titulo">Fobia Social</h3>
                     <p class="cartao-perfil">Quem eu não conheço nao consigo falar.</p>
                     <p class="cartao_info cartao_info--tempo">33 minutos</p>
-                    <p class="cartao_info cartao_info--visualiza">123 Visualizacoes</p>
-                    <button data-video-id='AC1D_1tk9sE' class="cartao_botao cartao_botao--play cartao_botao--destaque js-video-button">Assistir agora</button>
+                    <p class="cartao_info cartao_info--visualiza">0 Visualizacoes</p>
+                    <button data-video-id='AC1D_1tk9sE' data-visualizacao class="cartao_botao cartao_botao--play cartao_botao--destaque js-video-button">Assistir agora</button>
                 </div>
             </article>
             
@@ -48,34 +48,48 @@
                 <a href="#" class="cartao_link">Ver todos</a>
                 <ul class="cartao_favorito">
                     <li class="cartao_item">
-                        <img src="../assets/img/miniatura_1.png" alt="thumb1" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_1.png" alt="thumb1" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a> 
                     </li>
                     <li class="cartao_item">
-                        <img src="../assets/img/miniatura_2.png" alt="thumb2" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_2.png" alt="thumb2" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a>
                     </li>
                     <li class="cartao_item">
-                        <img src="../assets/img/miniatura_3.png" alt="thumb3" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_3.png" alt="thumb3" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a>
+                    </li>
+                    
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="http://" target="_blank">
+                            <img src="../assets/img/miniatura_4.png" alt="thumb4" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a> 
                     </li>
                     <li class="cartao_item">
-                        <img src="../assets/img/miniatura_4.png" alt="thumb4" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a>
                     </li>
                     <li class="cartao_item">
-                        <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
-                    </li>
-                    <li class="cartao_item">
-                        <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
-                        <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
-                        <p class="cartao_item_perfil">Raphael Westim</p>
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">HZC - LoveMachine</h4>
+                            <p class="cartao_item_perfil">Raphael Westim</p>
+                        </a>
+                        
                     </li>
                 </ul>
             </article>
@@ -166,14 +180,5 @@
         <script src="../js/index.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="../js/jquery-modal-video.min.js"></script>
-        <script>
-            $(".js-video-button").modalVideo({
-                youtube:{
-                    controls:0,
-                    nocookie: true
-                },
-          url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
-            });
-        </script>
     </body>
 </html>

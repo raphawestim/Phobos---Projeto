@@ -14,16 +14,26 @@ function paginaAnimal(){
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 
-let visualizacoes = 0;
-
-function addVisual(){
-    visualizacoes++;
-    numeroVisu.innerText = `${visualizacoes} Visualizações`;
+ // Local Storage ------------------------//
+ function getLocalStorage(){
+    const visualizacoesLocalStorage = JSON.parse(localStorage.getItem('visualizacoes')) || 0;
+    numeroVisu.innerText = `${visualizacoesLocalStorage} Visualizações`
+    return visualizacoesLocalStorage;
 }
 
-console.log(numeroVisu);
+getLocalStorage();
 
-btnVisu.addEventListener("click", addVisual);
+// Contador de cliques ------------------------//
+function addVisualizacoes(){
+    let visualizacoesLocalStorage = getLocalStorage();
+    visualizacoesLocalStorage += 1;
+    localStorage.setItem('visualizacoes', JSON.stringify(visualizacoesLocalStorage));
+    getLocalStorage();
+}
+btnVisu.addEventListener("click", addVisualizacoes);
+
+
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
     //console.log("DOM completamente carregado e analisado");
@@ -37,12 +47,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   function saveCache(){
-
   }
-
-  // Store
-localStorage.setItem("lastname", "Smith");
-// Retrieve
-document.getElementById("result").innerHTML = 
-localStorage.getItem("lastname");
 
