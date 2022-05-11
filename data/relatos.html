@@ -6,7 +6,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-            <title>Phobos - Relatos</title>
+            <title>HZC PICOS</title>
             <link rel="stylesheet" href="../css/reset.css">
             <link rel="stylesheet" href="../css/estilos.css">
             <link rel="stylesheet" href="../css/modal-video.min.css">
@@ -25,8 +25,8 @@
             <a href="#" class="menu-lateral__link video ">Mais Procurados</a>
             <a href="../data/tipos.html" class="menu-lateral__link pico ">Tipos</a>
             <a href="../data/relatos.html" class="menu-lateral__link integrante menu-lateral__link--ativo">Relatos</a>
-            <a href="#" class="menu-lateral__link camisa ">Historia</a>
-            <a href="#" class="menu-lateral__link pintura ">Contato</a>
+            <a href="../data/historia.html" class="menu-lateral__link camisa ">Historia</a>
+            <a href="../data/contato.html" class="menu-lateral__link pintura ">Contato</a>
         </nav>
         <main class="principal">
             <h2 class="titulo-pagina">DESTAQUE</h2>
@@ -38,8 +38,8 @@
                     <h3 class="cartao-titulo">Fobia Social</h3>
                     <p class="cartao-perfil">Quem eu não conheço nao consigo falar.</p>
                     <p class="cartao_info cartao_info--tempo">33 minutos</p>
-                    <p class="cartao_info cartao_info--visualiza">0 Visualizações</p>
-                    <button data-video-id='AC1D_1tk9sE' data-visualizacao class="cartao_botao cartao_botao--play cartao_botao--destaque js-video-button">Assistir agora</button>
+                    <p class="cartao_info cartao_info--visualiza">123 Visualizacoes</p>
+                    <button data-video-id='AC1D_1tk9sE' class="cartao_botao cartao_botao--play cartao_botao--destaque js-video-button">Assistir agora</button>
                 </div>
             </article>
             
@@ -166,5 +166,14 @@
         <script src="../js/index.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="../js/jquery-modal-video.min.js"></script>
+        <script>
+            $(".js-video-button").modalVideo({
+                youtube:{
+                    controls:0,
+                    nocookie: true
+                },
+          url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
+            });
+        </script>
     </body>
 </html>

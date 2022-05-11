@@ -21,6 +21,8 @@ function addVisual(){
     numeroVisu.innerText = `${visualizacoes} Visualizações`;
 }
 
+console.log(numeroVisu);
+
 btnVisu.addEventListener("click", addVisual);
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -35,6 +37,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   function saveCache(){
-      
+
   }
+
+  // Store
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = 
+localStorage.getItem("lastname");
 
