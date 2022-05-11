@@ -10,33 +10,30 @@ botaoMenu.addEventListener("click",() => {
 function paginaAnimal(){
     window.location = "../data/CatalogoAnimal.html"
  }
- 
+
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 
-// Local Storage --------------------------------------------------------------------//
+ // Local Storage ------------------------//
  function getLocalStorage(){
-     let visualizacoes;
-    const visuStorage = JSON.parse(localStorage.getItem('visualizacoes') )|| {};
-    visualizacoes = visuStorage.visu;
-    numeroVisu.innerText = `${visuStorage.visu} Visualizações`;
-    return {visualizacoes, visuStorage};
- }
-
- getLocalStorage();
-
- // evento de salvar Visualizações------------------------------------------//
- function addVisual(){
-    let {visualizacoes, visuStorage} = getLocalStorage();
-    visualizacoes++;
-    visuStorage["visu"] = visualizacoes;
-    localStorage.setItem("visualizacoes", JSON.stringify(visuStorage));
-    numeroVisu.innerText = `${visuStorage.visu} Visualizações`;
+    const visualizacoesLocalStorage = JSON.parse(localStorage.getItem('visualizacoes')) || 0;
+    numeroVisu.innerText = `${visualizacoesLocalStorage} Visualizações`
+    return visualizacoesLocalStorage;
 }
 
-console.log(numeroVisu);
+getLocalStorage();
 
-btnVisu.addEventListener("click", addVisual);
+// Contador de cliques ------------------------//
+function addVisualizacoes(){
+    let visualizacoesLocalStorage = getLocalStorage();
+    visualizacoesLocalStorage += 1;
+    localStorage.setItem('visualizacoes', JSON.stringify(visualizacoesLocalStorage));
+    getLocalStorage();
+}
+btnVisu.addEventListener("click", addVisualizacoes);
+
+
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
     //console.log("DOM completamente carregado e analisado");
@@ -50,6 +47,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   function saveCache(){
-
   }
 
