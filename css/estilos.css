@@ -4,8 +4,7 @@
 }
 
 body{
-    background-color: #2b0d5c;
-    /* background-color: #1D232A; */
+    background: linear-gradient(98deg, rgba(29,35,42,1) 0%, rgba(43,13,92,1) 38%, rgba(54,54,54,1) 100%);
     font-family: 'open sans', 'icones', sans-serif;
     color: #FFFFFF;
     line-height: 1.5;
@@ -44,6 +43,12 @@ body{
 
 .cabecalho_perfil{
     display: none;
+}
+
+.notificacao{
+    align-items: end;
+    justify-content: flex-end;
+    display: flex;
 }
 
 @media screen and (min-width: 1440px){
@@ -312,6 +317,14 @@ body{
     border-radius: 10px;
     font-size: 0.9rem;
     justify-self: flex-end;
+    transition: 0.3s;
+}
+
+.cartao_botao:hover{
+    background-color: #fff;
+    color:#180832;
+    cursor: pointer;
+    
 }
 
 .cartao_botao--play::before{
