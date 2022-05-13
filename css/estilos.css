@@ -10,7 +10,7 @@ body{
     line-height: 1.5;
 }
 
-@media screen and (min-width: 1320px){
+@media screen and (min-width: 1024px){
     body{
         display: grid;
         grid-template-columns: auto 1fr;
@@ -57,7 +57,7 @@ body{
     display: flex;
 }
 
-@media screen and (min-width: 1320px){
+@media screen and (min-width: 1024px){
     .cabecalho{
         background-color: rgb(18 2 42);
         display: grid;
@@ -154,7 +154,7 @@ body{
     left: 24px;
 }
 
-@media screen  and (min-width: 1320px) {
+@media screen  and (min-width: 1024px) {
     .menu-lateral{
         position:static;
         width: 200px;
@@ -216,7 +216,7 @@ body{
     font-weight: 700;
 }
 
-@media screen and (min-width: 1320px){
+@media screen and (min-width: 1024px){
     .principal{
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -359,7 +359,7 @@ body{
     display: none;
 }
 
-@media screen and (min-width: 1320px){
+@media screen and (min-width: 1024px){
     .cartao--destaque{
         margin-bottom: 0;
     }
@@ -446,21 +446,21 @@ body{
     gap:16px;
 }
 
-@media only screen and (min-width: 1320px){
+@media only screen and (min-width: 1024px){
     .secao{
         grid-template-columns: repeat(4, 1fr);
     }
 
 }
 
-@media only screen and (min-width: 1320px){
+@media only screen and (min-width: 1024px){
     .secao_tipos{
         grid-template-columns: repeat(3, 1fr);
     }
 
 }
 
-@media screen  and (min-width:1320px){
+@media screen  and (min-width:1024px){
     .destaque-video{
         grid-area: destaque-video;
     }
