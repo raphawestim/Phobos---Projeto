@@ -446,6 +446,11 @@ body{
     gap:16px;
 }
 
+.texto-obs{
+    font-size: 14px;
+    color: #95999c;
+}
+
 @media only screen and (min-width: 1024px){
     .secao{
         grid-template-columns: repeat(4, 1fr);
