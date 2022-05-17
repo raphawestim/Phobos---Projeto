@@ -3,6 +3,25 @@ const menu = document.querySelector(".menu-lateral");
 
 
 
+// const btnAtiva = document.querySelector('btnView');
+// const div = document.querySelector('containerView');
+
+// console.log(btnView);
+// console.log(containerView);
+
+// btnAtiva.addEventListener("click", function(){
+//   const div = document.getElementById('containerView');
+//     div.classList.toggle('hide');
+
+// })
+function onDiv(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none")
+      document.getElementById(el).style.display = 'block';
+    else
+      document.getElementById(el).style.display = 'none';
+  }
+
 botaoMenu.addEventListener("click",() => {
     menu.classList.toggle('menu-lateral--ativo');
 })
@@ -17,6 +36,10 @@ function paginaAnimal(){
 
  function paginaVideo2(){
     window.location = "../data/video2.html"
+ }
+
+ function aranhas(){
+    window.location = "../data/aranhas.html"
  }
 
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
@@ -54,6 +77,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   });
 
-  function saveCache(){
-  }
 
+ 

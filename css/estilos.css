@@ -18,6 +18,18 @@ body{
     }
 }
 
+.hide{
+    display: none;
+}
+
+.fotoview{
+
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
 .cabecalho{
     display:flex;
     justify-content: space-between;
@@ -276,8 +288,20 @@ body{
     grid-column: span 2;
 }
 
+.cartao-titulo-fobia{
+    font-size: 1.9rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
 .cartao-perfil{
     color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao-perfil-atencao{
+    color: #fff;
     font-size: 0.9rem;
     grid-column: span 2;
 }
@@ -337,6 +361,11 @@ body{
 
 .cartao_botao--compra::before{
     content: "\e901";
+    font-size: 24px;
+}
+
+.cartao_botao--foto::before{
+    content: "\e90f";
     font-size: 24px;
 }
 
@@ -490,3 +519,4 @@ body{
         grid-area: secao-produtos;
     }
 }
+

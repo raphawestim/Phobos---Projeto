@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="../css/modal-video.min.css">
+        <title>Phobos - Animais</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <button class="cabecalho__menu" aria-label="menu"><i></i></button>
+            <img class="cabecalho__logo" src="../assets/img/logo.png" alt="Logotipo da Phobos">
+            <!-- <p class="cabecalho_perfil">Raphael Westim</p> -->
+            <button class="cabecalho__notficacao cabecalho-sino" aria-label="Notificacao"><i></i></button>
+        </header>
+        <nav class="menu-lateral menu-lateral--ativo">
+            <img src="../assets/img/logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
+            <a href="../index.html" class="menu-lateral__link inicio menu-lateral__link--ativo">Inicio</a>
+            <a href="../data/tipos.html" class="menu-lateral__link pico ">Tipos</a>
+            <a href="../data/relatos.html" class="menu-lateral__link integrante ">Relatos</a>
+            <a href="../data/historia.html" class="menu-lateral__link camisa ">Historia</a>
+            <a href="../data/contato.html" class="menu-lateral__link pintura ">Contato</a>
+        </nav>
+        <main class="principal">
+            <!-- <h2 class="titulo-pagina">DESTAQUE</h2> -->
+            <article class="cartao cartao--destaque destaque-video">
+                <!-- <iframe width="100%" height="621" src="https://www.youtube.com/embed/KFowNIMdLiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <div class="cartao-conteudo">
+                    <!-- <p class="cartao-destaque">Minutos Psíquicos</p> -->
+                    <h3 class="cartao-titulo-fobia">Aracnofobia</h3>
+                    <p class="cartao-perfil">
+                        "Aracnofobia é a fobia de aranhas. A pessoa que apresenta fobia de aranha mantêm distância de locais onde possam existí-las, evitam viajar para o campo ou morar em um lugar onde apareça uma aranha, mesmo sendo pequena. Ao dormir revistam atrás dos móveis para conferir se não há aranhas no quarto.
+                    </p>
+                    <p class="cartao-perfil">
+                        Sendo assim, a aracnofobia pode limitar a vida das pessoas que a apresentam, determinando onde vivem, para onde viajam e seus passatempos.
+                    </p>
+                    <p class="cartao-perfil">
+                        Alguns dos sintomas da aracnofobia são: sudorese, pulso acelerado, inquietação, respiração rápida, taquicardia e náuseas.
+                    </p>
+                    <p class="cartao-perfil">
+                        O diagnóstico é baseado apenas nos sintomas apresentados."
+                    </p>
+                    <p class="cartao-perfil">
+                        Veja mais em: https://brasilescola.uol.com.br/psicologia/aracnofobia.htm
+                    </p>
+                    <p class="cartao-perfil-atencao">
+                        Atenção, clicando no botão abaixo mostraremos imagens sugestivas a fobia apresentada acima.
+                    </p>
+                    <button type="button" id="btnView" class="cartao_botao cartao_botao--foto cartao_botao--destaque" onclick="onDiv('containerView')">veja imagens</button>
+                    <div class="fotoview" id="containerView" style="display:none" >
+                        <img src="../assets/img/produto_5a.png" alt="">
+                        <img src="../assets/img/produto_5a.png" alt="">
+                        <img src="../assets/img/produto_5a.png" alt="">
+                        <img src="../assets/img/produto_5a.png" alt="">
+                    </div>
+                    
+                </div>  
+            </article>
+            <article class="cartao cartao--recentes videos-recentes">
+                <h3 class="cartao_titulo">Videos similares</h3>
+                <a href="#" class="cartao_link">Ver todos</a>
+                <ul class="cartao_lista">
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_1.png" alt="thumb1" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Ombrofobia medo de chuva. Fobias.</h4>
+                            <p class="cartao_item_perfil">Cab.curiosidades</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_2.png" alt="thumb2" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Casos de Hipnoterapia - Fobia de Insetos</h4>
+                            <p class="cartao_item_perfil">Equilibrando</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_3.png" alt="thumb3" class="cartao_item_thumb">
+                        <h4 class="cartao_item_titulo">Documentação exibe curta-metragem sobre medos e fobias</h4>
+                        <p class="cartao_item_perfil">TV BrasilGov</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_4.png" alt="thumb4" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Fobia de agulha</h4>
+                            <p class="cartao_item_perfil">Dra. Anna Luyza Aguiar</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Cura de Fobia de Aranhas</h4>
+                            <p class="cartao_item_perfil">Valdecy Carneiro - Hipnose e Psicologia</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Cura de Fobia de Aranhas</h4>
+                            <p class="cartao_item_perfil">Valdecy Carneiro - Hipnose e Psicologia</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Cura de Fobia de Aranhas</h4>
+                            <p class="cartao_item_perfil">Valdecy Carneiro - Hipnose e Psicologia</p>
+                        </a>
+                    </li>
+                    <li class="cartao_item">
+                        <a class="cartao-item-link" href="">
+                            <img src="../assets/img/miniatura_5.png" alt="thumb5" class="cartao_item_thumb">
+                            <h4 class="cartao_item_titulo">Cura de Fobia de Aranhas</h4>
+                            <p class="cartao_item_perfil">Valdecy Carneiro - Hipnose e Psicologia</p>
+                        </a>
+                    </li>
+                </ul>
+            </article> 
+        </main>
+        <script src="../js/index.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="../js/jquery-modal-video.min.js"></script>
+    </body>
+</html>
