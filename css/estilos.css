@@ -18,8 +18,66 @@ body{
     }
 }
 
+input{
+    color: #000000;
+}
+
+textarea{
+    color: #000000;
+}
+
+
+
 .hide{
     display: none;
+}
+.cartao-perfil-input{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.btnEnvia{
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #0480DC;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btnEnvia:hover{
+    background-color: #fff;
+    color:#180832;
+    cursor: pointer;
+    
+}
+
+.btnApaga{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #0480DC;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btnApaga:hover{
+    background-color: #fff;
+    color:#180832;
+    cursor: pointer;
+    
 }
 
 .fotoview{
@@ -302,6 +360,19 @@ body{
     grid-column: span 2;
 }
 
+.cartao-perfil-checkbox{
+    color: #000;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao-perfil-form{
+    color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2;
+    margin-top:10px;
+}
+
 .cartao-perfil-atencao{
     color: #fff;
     font-size: 0.9rem;
@@ -535,5 +606,9 @@ body{
     .secao-produtos{
         grid-area: secao-produtos;
     }
+}
+
+.bullets-form{
+    margin-top: 10px;
 }
 
