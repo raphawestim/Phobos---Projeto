@@ -42,6 +42,10 @@ function paginaAnimal(){
     window.location = "../data/aranhas.html"
  }
 
+ function cosmos(){
+  window.location = "../data/cosmofobia.html"
+}
+
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 

@@ -308,6 +308,15 @@ body{
     grid-column: span 2;
 }
 
+.cartao-perfil-atencao-2{
+    color: #000;
+    font-size: 0.9rem;
+    grid-column: span 2;
+    background-color: #95999c;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
 .cartao-info{
     color: #fff;
     /* color: #95999c; */
@@ -451,6 +460,12 @@ body{
 
     .cartao-item-link{
         display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .cartao-item-link-help{
+        /* display: grid; */
         grid-template-columns: auto 1fr;
         gap: 8px;
     }
