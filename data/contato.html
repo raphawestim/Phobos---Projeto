@@ -17,6 +17,7 @@
             <button class="cabecalho__menu" aria-label="menu"><i></i></button>
             <img class="cabecalho__logo" src="../assets/img/logo.png" alt="Logotipo da Phobos">
             <!-- <p class="cabecalho_perfil">Raphael Westim</p> -->
+            <p class="cartao-perfil-pesquisa"><span class="texto-pesquisa">Pesquisa:</span><input type="text" size="20" name="redirect" value=""> </p>
             <button class="cabecalho__notficacao cabecalho-sino" aria-label="Notificacao"><i></i></button>
         </header>
         <nav class="menu-lateral menu-lateral--ativo">
@@ -31,24 +32,19 @@
             <h2 class="titulo-pagina">CONTATO</h2>
             <article class="cartao cartao--destaque destaque-video">
                 <!-- <iframe width="100%" height="621" src="https://www.youtube.com/embed/KFowNIMdLiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <div class="cartao-conteudo">
+                <div class="cartao-conteudo-form">
                     <!-- <p class="cartao-destaque">Minutos Psíquicos</p> -->
-                    <h3 class="cartao-titulo-fobia">Entre em contato conosco!</h3>
+                    <h3 class="cartao-titulo">Entre em contato conosco!</h3>
                     <p class="cartao-perfil">
                         Reservamos esta area de contato para mandar relatos ou até mesmo elogios.
                     </p>
 
                     <form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
-                        <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
-                        <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
-                        <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
-                        <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+                        <p class="cartao-perfil-form">Nome:<br /> <input type="text" size="50" name="nome" value="seu nome aqui"> </p>   
                         
-                        <p class="cartao-perfil-form">Nome:<br /> <input type="text" size="30" name="nome" value="seu nome aqui"> </p>   
+                        <p class="cartao-perfil-form">E-mail:<br /> <input type="text" size="50" name="redirect" value="testeiseuemail@gmail.com"> </p>
                         
-                        <p class="cartao-perfil-form">E-mail:<br /> <input type="text" size="30" name="redirect" value="testeiseuemail@gmail.com"> </p>
-                        
-                        <p class="cartao-perfil-form">Telefone<br /> <input type="text" size="30" name="phone" value="(99)9999-9999"> </p>  
+                        <p class="cartao-perfil-form">Telefone<br /> <input type="text" size="50" name="phone" value="(99)9999-9999"> </p>  
                         
                         <p class="cartao-perfil-form">Comentários:<br /></p> 
                         <textarea id="story" name="story" rows="10" cols="100"></textarea>

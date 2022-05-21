@@ -46,6 +46,10 @@ function paginaAnimal(){
   window.location = "../data/cosmofobia.html"
 }
 
+function relato1(){
+  window.location = "../data/relato1.html"
+}
+
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 

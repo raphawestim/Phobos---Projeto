@@ -20,10 +20,36 @@ body{
 
 input{
     color: #000000;
+    grid-column: span 2;
+    padding: 10px;
 }
 
 textarea{
     color: #000000;
+    grid-column: span 2;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.lista-fobias{
+    list-style: initial;
+    padding-left: 20px;
+    grid-column: span 2;
+    font-weight: bold;
+    
+}
+
+.item-fobia{
+    margin-top: 2px ;
+    text-transform: capitalize;
+}
+
+.linkAnimal:hover{
+    color: #0480DC;
 }
 
 
@@ -35,6 +61,7 @@ textarea{
     display: flex;
     gap: 7px;
     margin-top: 10px;
+    grid-column: span 2;
 }
 
 .btnEnvia{
@@ -295,6 +322,7 @@ textarea{
         grid-template-areas: 
         "titulo-pagina titulo-pagina titulo-pagina"
         "destaque-video destaque-video videos-recentes"
+        "secao-fobias secao-fobias secao-fobias"
         "secao-videos secao-videos secao-videos"
         "produtos-recentes destaque-produtos destaque-produtos"
         "secao-produtos secao-produtos secao-produtos";
@@ -342,6 +370,13 @@ textarea{
     gap: 8px;
 }
 
+.cartao-conteudo-form{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+} 
+
 .cartao-titulo{
     font-size: 1.2rem;
     font-weight: 700;
@@ -373,6 +408,19 @@ textarea{
     margin-top:10px;
 }
 
+.texto-pesquisa{
+    margin-right: 10px;
+}
+
+.cartao-perfil-pesquisa{
+    color: #95999c;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
 .cartao-perfil-atencao{
     color: #fff;
     font-size: 0.9rem;
@@ -400,6 +448,14 @@ textarea{
     align-items: center;
     color: #95999c;
 }
+
+.cartao_info_tags{
+    display:flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
 
 .cartao_info--tempo::before{
     content: "\e90c";
@@ -594,6 +650,10 @@ textarea{
     .secao-videos{
         grid-area: secao-videos;
     }
+
+    .secao-fobias{
+        grid-area: secao-fobias;
+    }
     
     .produtos-recentes{
         grid-area: produtos-recentes;
@@ -610,5 +670,6 @@ textarea{
 
 .bullets-form{
     margin-top: 10px;
+    grid-column: span 2;
 }
 
