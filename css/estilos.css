@@ -412,6 +412,7 @@ form{
     margin-right: 10px;
 }
 
+
 .cartao-perfil-pesquisa{
     color: #95999c;
     font-size: 0.9rem;
@@ -419,7 +420,28 @@ form{
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
+} 
+
+@media screen and (max-width: 1024px){
+
+    .form-template{
+        width: 320px ;
+    }
+
+    .texto-pesquisa{
+        display: none
+    }
+
+    .cartao-perfil-pesquisa{
+        color: #95999c;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 14px;
+    } 
 }
+
 
 .cartao-perfil-atencao{
     color: #fff;
