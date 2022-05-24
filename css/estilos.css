@@ -548,6 +548,10 @@ form{
     display: none;
 }
 
+.cartao--recentes-fobia{
+    display: grid;
+}
+
 @media screen and (min-width: 1024px){
     .cartao--destaque{
         margin-bottom: 0;
@@ -577,8 +581,23 @@ form{
         box-sizing: border-box;
         align-self: flex-start;
     }
+
+    .cartao--recentes-fobia{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+        box-sizing: border-box;
+        align-self: flex-start;
+    }
     
     .cartao--recentes .carto_titulo{
+        grid-column: auto;
+    }
+
+    .cartao--recentes-fobia .carto_titulo{
         grid-column: auto;
     }
 
@@ -614,7 +633,6 @@ form{
     }
 
     .cartao-item-link-help{
-        /* display: grid; */
         grid-template-columns: auto 1fr;
         gap: 8px;
     }
@@ -630,11 +648,26 @@ form{
         font-weight: 700;
     }
 
+    .cartao_titulo_fobia{
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
     .cartao_item_perfil{
         font-size: 0.8rem;
         color: #95999c;
     }
 }
+
+.cartao_titulo_fobia{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 
 .secao{
     display:grid;
