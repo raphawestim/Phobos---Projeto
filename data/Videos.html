@@ -1,0 +1,116 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+            <title>Phobos - Videos</title>
+            <link rel="stylesheet" href="../css/reset.css">
+            <link rel="stylesheet" href="../css/estilos.css">
+            <link rel="stylesheet" href="../css/modal-video.min.css">
+            
+    </head>
+    <body>
+        <header class="cabecalho">
+            <button class="cabecalho__menu" aria-label="menu"><i></i></button>
+            <img class="cabecalho__logo" src="../assets/img/logo.png" alt="Logotipo da Phobos">
+            <p class="cartao-perfil-pesquisa"><span class="texto-pesquisa">Pesquisa:</span><input type="text" size="20" name="redirect" value=""> </p>
+            <button class="cabecalho__notficacao cabecalho-sino" aria-label="Notificacao"><i></i></button>
+        </header>
+        <nav class="menu-lateral menu-lateral--ativo">
+            <img src="../assets/img/logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
+            <a href="../index.html" class="menu-lateral__link inicio">Inicio</a>
+            <a href="../data/tipos.html" class="menu-lateral__link pico ">Tipos</a>
+            <a href="../data/relatos.html" class="menu-lateral__link integrante ">Relatos</a>
+            <a href="#" class="menu-lateral__link camisa menu-lateral__link--ativo">Videos</a>
+            <a href="../data/contato.html" class="menu-lateral__link pintura ">Contato</a>
+        </nav>
+        <main class="principal">
+            <section class="secao secao-videos">
+                <h3 class="titulo-secao">Saúde mental</h3>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/video_5.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">didatics</p>
+                        <h3 class="cartao-titulo">7 sinais de que sua saúde mental está em risco</h3>
+                        <p class="cartao_info cartao_info--tempo">7 minutos</p>
+                        <button onclick="paginaVideo()" class="cartao_botao cartao_botao--play" aria-label="assistir agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/video_6.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Minutos Psíquicos</p>
+                        <h3 class="cartao-titulo">A alimentação pode afetar a saúde mental?</h3>
+                        <p class="cartao_info cartao_info--tempo">5 minutos</p>
+                        <button onclick="paginaVideo2()" class="cartao_botao cartao_botao--play" aria-label="assistir agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/video_7.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">SejaUmaPessoaMelhor</p>
+                        <h3 class="cartao-titulo">O medo de falar em público pode ser perigoso</h3>
+                        <p class="cartao_info cartao_info--tempo">9 minutos</p>
+                        <button class="cartao_botao cartao_botao--play" aria-label="assistir agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/video_8.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Odair Comin</p>
+                        <h3 class="cartao-titulo">7 Sinais do Medo de Água com Odair Comin</h3>
+                        <p class="cartao_info cartao_info--tempo">2 minutos</p>
+                        <button class="cartao_botao cartao_botao--play" aria-label="assistir agora"></button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="secao secao-produtos">
+                <h3 class="titulo-secao">Curiosidades sobre Fobias</h3>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/produto_13.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Mistérios do Mundo</p>
+                        <h3 class="cartao-titulo">20 fobias assustadoras que você pode ter e não sabe</h3>
+                        <p class="cartao_info cartao_info--tempo">10 minutos</p>
+                        <button onclick="paginaAnimal()" class="cartao_botao cartao_botao--info btnPaginas" aria-label="ver agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/produto_14.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Minutos Psíquicos</p>
+                        <h3 class="cartao-titulo">6 Fatos sobre fobias específicas</h3>
+                        <p class="cartao_info cartao_info--tempo">9 minutos</p>
+                        <button onclick="paginaAmbiente()" class="cartao_botao cartao_botao--info btnPaginas" aria-label="ver agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/produto_15.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Didatics</p>
+                        <h3 class="cartao-titulo">As 7 fobias mais comuns</h3>
+                        <p class="cartao_info cartao_info--tempo">11 minutos</p>
+                        <button onclick="paginaClima()" class="cartao_botao cartao_botao--info btnPaginas" aria-label="ver agora"></button>
+                    </div>
+                </article>
+                <article class="cartao cartao--destaque">
+                    <img src="../assets/img/produto_16.png" alt="" class="video">
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Mega Curioso</p>
+                        <h3 class="cartao-titulo">12 fobias totalmente bizarras!</h3>
+                        <p class="cartao_info cartao_info--tempo">16 minutos</p>
+                        <button onclick="paginaBiologia()" class="cartao_botao cartao_botao--info btnPaginas" aria-label="ver agora"></button>
+                    </div>
+                </article>
+            </section>
+           
+            
+
+        </main>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
