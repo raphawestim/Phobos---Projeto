@@ -50,6 +50,10 @@ function relato1(){
   window.location = "../data/relato1.html"
 }
 
+function relato2(){
+  window.location = "../data/relato2.html"
+}
+
  const numeroVisu = document.querySelector('.cartao_info--visualiza');
  const btnVisu = document.querySelector("[data-visualizacao]");
 

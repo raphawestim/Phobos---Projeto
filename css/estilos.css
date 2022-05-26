@@ -275,6 +275,18 @@ form{
     content: "\e909";
 }
 
+.play::before{
+    content: "\e90b";
+}
+
+.info::before{
+    content: "\e90f";
+}
+
+.contato::before{
+    content: "\e903";
+}
+
 .integrante::before{
     content: "\e903";
 }
@@ -629,6 +641,12 @@ form{
     .cartao-item-link{
         display: grid;
         grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .cartao-item-link-relato{
+        display: grid;
+        /* grid-template-columns: auto 1fr; */
         gap: 8px;
     }
 
